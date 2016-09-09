@@ -1,0 +1,19 @@
+<ion-view title="Cambiar contraseña" id="page5">
+    <ion-content padding="true" class="has-header">
+        <form id="cambiarContraseA-form2" class="list ">
+            <label class="item item-input " id="cambiarContraseA-input3">
+                <span class="input-label">Usuario</span>
+                <input type="text" ng-model="a1" placeholder="">
+            </label>
+            <label class="item item-input " id="cambiarContraseA-input7">
+                <span class="input-label">Contraseña</span>
+                <input type="password" ng-model="b2" placeholder="">
+            </label>
+            <label class="item item-input " id="cambiarContraseA-input4">
+                <span class="input-label">Confirmar contraseña</span>
+                <input type="password" ng-model="b3" placeholder="">
+            </label>
+        </form>
+        <a ui-sref="contraseACambiada" id="cambiarContraseA-button5" class=" button button-positive  button-block " ng-click="forgotPassword(a1,b2,b3)">Cambiar</a>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,32 @@
+<ion-view view-title="Editar Producto" id="editProduct">
+<ion-content>
+	
+ <div class="list">
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Nombre</span>
+    <input type="text" ng-model="data_product.name" placeholder="Ingrese su nombre">
+  </label>
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Tipo</span>
+    <input type="text" ng-model="data_product.type" placeholder="Ingrese el tipo">
+  </label>
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Cantidad</span>
+    <input type="text" ng-model="data_product.quantity" placeholder="Ingrese la cantidad">
+  </label>
+  
+   <label class="item item-input item-stacked-label">
+    <span class="input-label">Precio</span>
+    <input type="text" ng-model="data_product.price" placeholder="Ingrese el precio">
+  </label>
+
+</div>
+
+<div class="button-bar">
+    <button id="edit-product" class=" button button-positive  button-block " ng-click="editarProducto(data_product)">Editar</button>
+    <button id="delete-product" class=" button button-assertive  button-block " ng-click="cancelar()">Cancelar</button>
+</div>
+
+
+</ion-content>
+</ion-view>

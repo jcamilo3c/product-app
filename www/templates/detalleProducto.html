@@ -1,0 +1,18 @@
+<ion-view title="Detalle de Producto" id="page15">
+    <ion-content padding="true" class="has-header">
+    <div class="list card " id="cart-card21">
+            <ion-item class="item-icon-left positive  " id="cart-list-item5">
+                <i class="icon ion-android-phone-portrait"></i>{{ data_product.name}}</ion-item>
+            <div class="item item-body " id="cart-list-item-container1">
+                <div id="cart-null" style="margin-top:0px;color:#000000;">
+                    <li>Cantidad: {{ data_product.quantity}}</li>
+                    <li>Precio: {{ data_product.price}}</li>                    
+                </div>
+            </div>
+        </div>
+        <div class="button-bar">
+            <button id="edit-product" class=" button button-positive  button-block " ng-click="editarProducto(data_product.id)">Editar</button>
+            <button id="delete-product" class=" button button-assertive  button-block " ng-click="eliminarProducto(data_product.id)">Eliminar</button>
+        </div>
+     </ion-content>   
+</ion-view>

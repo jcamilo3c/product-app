@@ -1,0 +1,17 @@
+<ion-view title="Home" id="page1" ng-init="loadData()">
+    <ion-content padding="true" class="has-header">
+        <ion-refresher
+            pulling-text="Pull to refresh..."
+            on-refresh="loadData()">
+        </ion-refresher>
+        <div class="button-bar">
+            <button id="create-product" class=" button button-positive  button-block " ui-sref="menu.crearProducto">Crear Producto</button>
+        </div>
+        <ion-list id="home-list1">            
+            <ion-item id="home-list-item4" ng-repeat="item in list" ng-href="#/side-menu21/page15/{{ item.id }}">                
+                Modelo: {{item.name}}                            
+                <i class="ion-chevron-right"></i>                
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

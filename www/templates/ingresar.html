@@ -1,0 +1,19 @@
+<ion-view title="Ingresar" id="page4">
+    <ion-content padding="true" class="has-header">
+        <form id="ingresar-form1" class="list ">
+            <ion-list id="ingresar-list2">
+                <label class="item item-input " id="ingresar-input1">
+                    <span class="input-label">Usuario</span>
+                    <input type="text" ng-model="a" placeholder="">
+                </label>
+                <label class="item item-input " id="ingresar-input2">
+                    <span class="input-label">Contraseña</span>
+                    <input type="password" ng-model="b" placeholder="">
+                </label>
+            </ion-list>
+            <div class="spacer" style="height: 40px;"></div>
+            <a  id="ingresar-button3" class=" button button-stable  button-block " ng-click='ingresarclick(a,b)'>Ingresar</a>
+            <a ui-sref="cambiarContraseA" id="ingresar-button4" class=" button button-positive  button-block button-clear " >Cambiar password</a>
+        </form>
+    </ion-content>
+</ion-view>

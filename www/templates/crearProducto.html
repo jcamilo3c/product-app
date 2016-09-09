@@ -1,0 +1,26 @@
+<ion-view title="Crear producto" id="addProd">
+    <ion-content padding="true" class="has-header">
+        <div class="list">
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Nombre</span>
+    <input type="text" ng-model="topic.name" placeholder="Ingrese su nombre">
+  </label>
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Tipo</span>
+    <input type="text" ng-model="topic.type" placeholder="Ingrese el tipo">
+  </label>
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Cantidad</span>
+    <input type="text" ng-model="topic.quantity" placeholder="Ingrese la cantidad">
+  </label>
+  
+   <label class="item item-input item-stacked-label">
+    <span class="input-label">Precio</span>
+    <input type="text" ng-model="topic.price" placeholder="Ingrese el precio">
+  </label>
+
+</div>
+
+    <a id="crearProducto-button18" class=" button button-positive  button-block " ng-click="crearProducto(topic)">Crear</a>
+    </ion-content>
+</ion-view>

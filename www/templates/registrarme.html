@@ -1,0 +1,35 @@
+<ion-view title="Registrarme" id="page8">
+    <ion-content padding="true" class="has-header">
+        <form id="registrarme-form3" class="list " novalidate name="formRegistro">
+            <ion-list id="registrarme-list3">
+                <label class="item item-input " id="registrarme-input5">
+                    <span class="input-label">Usuario</span>
+                    <input type="text" ng-model="c1" placeholder="" required>
+                     <span style="color:#ff2a25" ng-show="formRegistro.$dirty && formRegistro.c1.$invalid">
+                        <span ng-show="formRegistro.c1.$error.required">El usuario es requerido.</span>
+                    </span>
+                </label>
+                <label class="item item-input " id="registrarme-input6">
+                    <span class="input-label">Contraseña</span>
+                    <input type="password" ng-model="c2" placeholder="" required>
+                </label>
+                <label class="item item-input " id="registrarme-input7">
+                    <span class="input-label">Firstname</span>
+                    <input type="text" ng-model="c3" placeholder="" required>
+                </label>
+                <label class="item item-input " id="registrarme-input8">
+                    <span class="input-label">Lastname</span>
+                    <input type="text" ng-model="c4" placeholder="" required>
+                </label>
+                <label class="item item-input " id="registrarme-input9">
+                    <span class="input-label">Phone</span>
+                    <input type="text" ng-model="c5" placeholder="" required>
+                </label>
+            </ion-list>
+            <div class="spacer" style="height: 40px;"></div>
+            <button id="registrarme-button6" class=" button button-positive  button-block " ng-click="registrarclick(c1,c2,c3,c4,c5)">Registrar</button>
+            <!-- <a id="registrarme-button6" class=" button button-stable  button-block " ng-click="registrarclick(c1,c2,c3,c4,c5)">Registrar</a> //-->
+            <a href="#" onclick="window.open('/signup', '_system', 'location=yes'); return false;" id="registrarme-button7" class=" button button-positive  button-block button-clear ">Terminos y condiciones</a>
+        </form>
+    </ion-content>
+</ion-view>

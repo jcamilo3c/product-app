@@ -1,0 +1,19 @@
+<ion-view title="Editar perfil" id="page10">
+    <ion-content padding="true" class="has-header">
+        <form id="editarPerfil-form4" class="list ">
+            <label class="item item-input " id="editarPerfil-input8">
+                <span class="input-label" >Nombre</span>
+                <input type="text" placeholder="" ng-model="firstname">
+            </label>
+            <label class="item item-input " id="editarPerfil-input9">
+                <span class="input-label">Apellido</span>
+                <input type="text" placeholder="" ng-model="lastname">
+            </label>
+               <label class="item item-input " id="editarPerfil-input10">
+                <span class="input-label">Número</span>
+                <input type="text" placeholder="" ng-model="phone">
+            </label>
+        </form>
+        <a ui-sref="menu.perfilEditado" id="editarPerfil-button11" class=" button button-positive  button-block " ng-click="cambiarPerfil(firstname,lastname,phone)">Cambiar</a>
+    </ion-content>
+</ion-view>

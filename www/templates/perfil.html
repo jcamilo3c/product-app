@@ -1,0 +1,16 @@
+<ion-view title="Perfil" id="page3">
+    <ion-content padding="true" class="has-header">
+     <ion-refresher
+    pulling-text="Pull to refresh..."
+    on-refresh="doRefresh()">
+  </ion-refresher>
+        <ion-list id="perfil-list4">
+            <ion-item id="perfil-list-item7" ng-model="b1">{{b1}}</ion-item>
+            <ion-item id="perfil-list-item8" ng-model="b2">{{b2}}</ion-item>
+            <ion-item id="perfil-list-item9" ng-model="b3">{{b3}}</ion-item>
+        </ion-list>
+        <a ui-sref="menu.editarPerfil" id="perfil-button8" class=" button button-positive  button-block ">Editar</a>
+        <a ui-sref="menu.sesiNCerrada" id="perfil-button9" class=" button button-positive  button-block ">Cerrar Sesión</a>
+        <a ui-sref="menu.eliminaciN" id="perfil-button10" class=" button button-light  button-block ">Eliminar cuenta</a>
+    </ion-content>
+</ion-view>
